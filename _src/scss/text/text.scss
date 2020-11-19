@@ -1,0 +1,45 @@
+.text {
+   font-family: 'Montserrat';
+   &--wt {
+      &-bold {
+         font-weight: 700;
+      }
+      &-norm {
+         font-weight: 400;
+      }
+   }
+   &--fz {
+      &-12 {
+         font-size: .75rem;
+      }
+      &-14 {
+         font-size: .875rem;
+      }
+      &-16 {
+         font-size: 1rem;
+      }
+      &-18 {
+         font-size: 1.125rem;
+      }
+      &-24 {
+         font-size: 1.5rem;
+      }
+      &-28 {
+         font-size: 1.75rem;
+      }
+      &-38 {
+         font-size: 2.375rem;
+      }
+      &-48 {
+         font-size: 3rem;
+      }
+   }
+   &--col {
+      &-white {
+         color: #ffffff;
+      }
+      &-black {
+         color: #000000;
+      }
+   }
+}

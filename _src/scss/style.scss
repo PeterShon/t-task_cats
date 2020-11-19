@@ -8,3 +8,21 @@
       font-style: #{$style};
    }
 }
+
+//подключаемые файлы
+//lvl-0
+@import "./fonts.scss";
+@import "./reset.scss";
+//lvl-1
+@import "./html/html.scss";
+@import "./text/text.scss";
+@import "./link/link.scss";
+//lvl-2
+@import "./body/body.scss";
+@import "./header/header.scss";
+//lvl-3
+@import "./front/front.scss";
+//lvl-4
+@import "./nav/nav.scss";
+//lvl-top
+@import "./state/state.scss";

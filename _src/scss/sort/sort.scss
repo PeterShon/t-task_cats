@@ -1,0 +1,38 @@
+.sort {
+   display: flex;
+   &__item {
+      display: flex;
+      align-items: center;
+
+      border-bottom: 1px solid #00000000;
+      cursor: pointer;
+
+      transition: 0.2s ease-in;
+      &:not(:first-child) {
+         margin-left: 3.4375rem;
+      }
+      &:hover {
+         border-bottom: 1px solid #00000028;
+      }
+      &--active {
+         border-bottom: 1px solid #000000;
+      }
+   }
+   &__name {
+   }
+   &__icon {
+      margin-left: 0.875rem;
+      padding-top: 0.2rem;
+
+      transition: 0.2s ease-in;
+      .sort__item:nth-child(1) & {
+         margin-left: 0.92rem;
+      }
+      .sort__item:nth-child(2) & {
+         margin-left: 1.5rem;
+      }
+      .sort__item:hover & {
+         transform: translateY(3px);
+      }
+   }
+}

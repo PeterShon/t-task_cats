@@ -42,7 +42,7 @@ h2,
 h3,
 h4,
 p,
-ul[class],
+ul,
 ol[class],
 li,
 figure,
@@ -307,6 +307,23 @@ html {
   margin-left: -0.2rem;
 }
 
+.main__front {
+  margin: 0 auto;
+}
+
+.main__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
 .front {
   max-width: 1180px;
   height: 100%;
@@ -332,6 +349,197 @@ html {
 
 .nav__link:hover {
   opacity: 0.7;
+}
+
+.section__sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2.19rem 0 2.15rem;
+}
+
+.section__sorting-text {
+  margin-left: -0.1rem;
+}
+
+.section__sort {
+  margin-left: 3.015rem;
+}
+
+.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sort__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #00000000;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.sort__item:not(:first-child) {
+  margin-left: 3.4375rem;
+}
+
+.sort__item:hover {
+  border-bottom: 1px solid #00000028;
+}
+
+.sort__item--active {
+  border-bottom: 1px solid #000000;
+}
+
+.sort__icon {
+  margin-left: 0.875rem;
+  padding-top: 0.2rem;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.sort__item:nth-child(1) .sort__icon {
+  margin-left: 0.92rem;
+}
+
+.sort__item:nth-child(2) .sort__icon {
+  margin-left: 1.5rem;
+}
+
+.sort__item:hover .sort__icon {
+  -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.cards__card {
+  margin-left: -2px;
+}
+
+.card {
+  width: 23.75rem;
+  cursor: pointer;
+}
+
+.card__muzzle-wrapper {
+  width: 100%;
+  height: 16.5rem;
+  overflow: hidden;
+}
+
+.card__muzzle {
+  opacity: 0.9;
+  -webkit-transition: 1.5s ease-in;
+  -o-transition: 1.5s ease-in;
+  transition: 1.5s ease-in;
+}
+
+.card:hover .card__muzzle {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #F3F3F3;
+  padding: 1.64rem 1.84rem 1.6rem;
+}
+
+.card__header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  margin-bottom: 1.26rem;
+}
+
+.card__header:before {
+  content: attr(data-name);
+}
+
+.card__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: .9rem;
+}
+
+.card__info-item:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40.4%;
+          flex: 1 1 40.4%;
+  border-left: 4px solid #6EBBD3;
+  padding-left: 1.13rem;
+}
+
+.card__info-item:nth-child(3) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 31%;
+          flex: 1 1 31%;
+}
+
+.card__info-item:nth-child(4) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 28.6%;
+          flex: 1 1 28.6%;
+}
+
+.card__info-item-d {
+  line-height: 0.9375;
+}
+
+.card__info-item-d:before {
+  content: attr(data-item-d);
+}
+
+.card__info-item-h {
+  line-height: 1.6;
+}
+
+.card__price:before {
+  content: attr(data-price);
+}
+
+.card__btn {
+  padding: 1.3125rem 0 1.24rem;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  background-color: #6EBBD3;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.card__btn:hover {
+  background-color: #4d8292;
+}
+
+.card__btn:before {
+  content: attr(data-btn);
 }
 
 ._hide {

@@ -1,5 +1,36 @@
 .cards {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   &__card-box {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px 0; 
+      &--first {
+         margin-top: -1.64rem;
+      }     
+   }
    &__card {
-      margin-left: -2px;
+      margin: 1.64rem 10px 0;
+   }
+   &__show-block {
+      padding: 1.32rem 8.06rem;
+      margin: 4rem -0.2rem 10rem 0;
+
+      border: 1px solid #cacaca;
+      background-color: transparent;
+      border-radius: 10px;
+      cursor: pointer;
+
+      line-height: 1.6;
+
+      transition: 0.3s;
+      &:hover {
+         background-color: #6ebbd31c;
+         border: 1px solid #cacaca00;
+      }
+      &:after {
+         content: attr(data-n);
+      }
    }
 }

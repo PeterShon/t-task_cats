@@ -324,6 +324,26 @@ html {
   height: 100%;
 }
 
+.main__arrowtop {
+  position: fixed;
+  bottom: 3rem;
+  right: 19%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(30px + 1.8rem);
+  height: calc(30px + 1.8rem);
+  background-color: #6EBBD3;
+  border: none;
+  cursor: pointer;
+}
+
 .front {
   max-width: 1180px;
   height: 100%;
@@ -351,15 +371,15 @@ html {
   opacity: 0.7;
 }
 
+.section {
+  width: 100%;
+}
+
 .section__sorting {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 2.19rem 0 2.15rem;
-}
-
-.section__sorting-text {
-  margin-left: -0.1rem;
 }
 
 .section__sort {
@@ -420,11 +440,60 @@ html {
           transform: translateY(3px);
 }
 
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards__card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px 0;
+}
+
+.cards__card-box--first {
+  margin-top: -1.64rem;
+}
+
 .cards__card {
-  margin-left: -2px;
+  margin: 1.64rem 10px 0;
+}
+
+.cards__show-block {
+  padding: 1.32rem 8.06rem;
+  margin: 4rem -0.2rem 10rem 0;
+  border: 1px solid #cacaca;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  line-height: 1.6;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cards__show-block:hover {
+  background-color: #6ebbd31c;
+  border: 1px solid #cacaca00;
+}
+
+.cards__show-block:after {
+  content: attr(data-n);
 }
 
 .card {
+  position: relative;
   width: 23.75rem;
   cursor: pointer;
 }
@@ -436,6 +505,12 @@ html {
 }
 
 .card__muzzle {
+  height: 100%;
+  width: 100%;
+  -o-object-position: center center;
+     object-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0.9;
   -webkit-transition: 1.5s ease-in;
   -o-transition: 1.5s ease-in;
@@ -523,27 +598,154 @@ html {
 }
 
 .card__btn {
+  position: relative;
   padding: 1.3125rem 0 1.24rem;
   width: 100%;
   cursor: pointer;
   border: none;
   border-radius: 0 0 10px 10px;
   background-color: #6EBBD3;
+  overflow: hidden;
   -webkit-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
-.card__btn:hover {
+.card__btn--buy:hover {
   background-color: #4d8292;
+}
+
+.card__btn--buy:hover:after {
+  opacity: 0.05;
+  -webkit-transform: rotate(360deg) scale(2.5);
+      -ms-transform: rotate(360deg) scale(2.5);
+          transform: rotate(360deg) scale(2.5);
+}
+
+.card__btn--buy:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: calc(50% - 1rem);
+  left: calc(50% - 1rem);
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/icons/heart.svg) center/contain no-repeat;
+  opacity: 0;
+  scale: 0;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.card__btn--bought {
+  background-color: black;
+}
+
+.card__btn--bought:hover:after {
+  opacity: 0.7;
+}
+
+.card__btn--bought:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -o-repeating-linear-gradient(315deg, #00000000 0px, #00000000 5px, #505050 6px, #505050 7px);
+  background: repeating-linear-gradient(135deg, #00000000 0px, #00000000 5px, #505050 6px, #505050 7px);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .card__btn:before {
   content: attr(data-btn);
+  position: relative;
+  z-index: 1;
+}
+
+.card__widgets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 2.07rem;
+  width: 100%;
+  padding: 0 2.0rem 0 2.46rem;
+}
+
+.card__widg-sale {
+  padding: 0.44rem 1.19rem 0.45rem 1.125rem;
+  border-radius: 10px;
+  background-color: #E52D2D;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card__widg-sale:hover {
+  background-color: #ff0000;
+}
+
+.card__widg-sale:before {
+  content: attr(data-percent);
+}
+
+.card__widg-like-wrap {
+  position: relative;
+  opacity: 0.5;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.card__widg-like-wrap:hover {
+  opacity: 1;
+}
+
+.card__widg-like-wrap--active {
+  opacity: 1;
+}
+
+.card__widg-like-wrap--active:hover {
+  opacity: 0.2;
+}
+
+.card__widg-like--blue {
+  position: absolute;
+  top: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card__widg-like-wrap:hover .card__widg-like--blue {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 ._hide {
   display: none;
+}
+
+._transparent {
+  opacity: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -562,6 +764,7 @@ html {
 .header{background:-webkit-gradient(linear, left top, left bottom, from(rgba(31, 32, 33, 0.79))), url(../img/header-background.webp) bottom/cover no-repeat}
 .header{background:-o-linear-gradient(rgba(31, 32, 33, 0.79)), url(../img/header-background.webp) bottom/cover no-repeat}
 .header{background:linear-gradient(rgba(31, 32, 33, 0.79)), url(../img/header-background.webp) bottom/cover no-repeat}
+.card__btn--buy:after{background:url(../img/icons/heart.svg) center/contain no-repeat}
 }
 
  @media (prefers-reduced-motion: reduce){

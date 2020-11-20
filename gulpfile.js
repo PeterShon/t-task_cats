@@ -34,7 +34,8 @@ let path = {
       js: source_folder + '/js/**/*.js',
       img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
       fonts: source_folder + '/fonts/*.ttf',
-      php: source_folder + '/*.php'
+      php: source_folder + '/*.php',
+      modules: source_folder + '/modules/**/*.*'
    },
    //путь к папке проекта, объект отвечает за удаление
    clean: './' + project_folder + '/'
@@ -207,6 +208,7 @@ function watchFiles(params) {
    gulp.watch([path.watch.js], js);
    gulp.watch([path.watch.img], images);
    gulp.watch([path.watch.php], php);
+   gulp.watch([path.watch.modules], modules);
 }
 
 let build = gulp.series(clean, gulp.parallel(fonts, images, js, css, html, php, modules), fontsStyle, fonts);
@@ -220,6 +222,7 @@ exports.js = js;
 exports.css = css;
 exports.php = php;
 exports.html = html;
+exports.modules = modules;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;

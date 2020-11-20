@@ -4,6 +4,7 @@
    align-items: center;
    &__card-box {
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
       margin: 0 -10px 0; 
       &--first {
@@ -15,7 +16,7 @@
    }
    &__show-block {
       padding: 1.32rem 8.06rem;
-      margin: 4rem -0.2rem 10rem 0;
+      margin: 4rem -0.2rem 5.21rem 0;
 
       border: 1px solid #cacaca;
       background-color: transparent;

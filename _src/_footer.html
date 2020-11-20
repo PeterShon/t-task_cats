@@ -2,18 +2,27 @@
    <div class="footer__front front">
       <div class="footer__inner">
          <div class="footer__wg-info">
-            <div class="footer__header text text--fz-48 text--wt-bold text--col-white">Успей купить!</div>
-            <div class="footer__description text text--fz-28 text--wt-normal text--col-white">Подпишись и успей словить
+            <div class="footer__wg-info-header text text--fz-48 text--wt-bold text--col-white">Успей купить!</div>
+            <div class="footer__wg-info-description text text--fz-28 text--wt-normal text--col-white">Подпишись и успей
+               словить
                все акции</div>
          </div>
          <div class="footer__wg-subscribe feedback">
             <form class="feedback__form" id="form" action="#">
-               <div class="feedback__input-item">
-                  <label class="feedback__input-label" for="feedback__input-email">E-Mail</label>
-                  <input class="feedback__input __req __email" type="text" id="feedback__input-email" name='email'>
+               <div class="feedback__input-email">
+                  <input class="feedback__input text text--fz-14 text--wt-normal text--col-black __req __email"
+                     type="text" id="feedback__input-email" name='Email' placeholder="Email">
                </div>
                <div class="feedback__btn-wrapper">
-                  <button class="feedback__btn" type="submit">Подписаться</button>
+                  <button class="feedback__btn text text--fz-14 text--wt-bold text--col-white "
+                     type="submit">Подписаться</button>
+               </div>
+               <div class="feedback__input-chb">
+                  <label class="feedback__chb-lb" for="feedback__input-chb">
+                     <input class="feedback__chb __req" type="checkbox" id="feedback__input-chb" name='chb'>
+                     <span class="feedback__chb-text text text--fz-14 text--wt-normal text--col-white">Подписаться на
+                        новости</span>
+                  </label>
                </div>
             </form>
          </div>

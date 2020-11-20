@@ -1,0 +1,29 @@
+.footer {
+   &__front {
+      margin: 0 auto;
+   }
+   &__inner {
+      background-color: #1F2021;
+      display: flex;
+      padding: 4.5rem 3.9rem 4.7rem 4rem;
+      & > *  {
+         margin: 1rem;
+      }
+   }
+   &__wg-info {
+      flex: 1 1 42.75%;
+   }
+   &__wg-info-header {
+      margin: 0 0 0 0.1rem;
+
+      line-height: 1;
+   }
+   &__wg-info-description {
+      margin-top: 2rem;
+      line-height: 0.95;
+      padding: 0 1.2rem 0 0;
+   }
+   &__wg-subscribe {
+      flex: 1 1 57.25%;
+   }
+}

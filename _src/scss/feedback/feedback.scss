@@ -1,0 +1,130 @@
+.feedback {
+   &__form {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin: -1.4rem -0.5rem 0;
+      & > * {
+         margin: 1.5rem 0.5rem 0;
+      }
+   }
+   &__input-email {
+      flex: 1 1 50.5%;
+      display: flex;
+
+      cursor: pointer;
+   }
+   &__input {
+      padding: 1.375rem 0 1.5rem 2.1rem;
+
+      width: 100%;
+
+      border: none;
+      border-radius: 10px;
+      &.__error {
+         background-color: #ffd6d6;
+      }
+      &::placeholder {
+         font-family: 'Montserrat';
+         font-size: .875rem;
+         font-weight: 400;
+         color: #000000;
+      }
+   }
+   &__btn-wrapper {
+      flex: 1 1 42%;
+   }
+   &__btn {
+      padding: 1.375rem 4.69rem 1.5rem 4.69rem;
+
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      background-color: #6EBBD3;
+
+      transition: 0.3s;
+      &:hover {
+         background-color: #4D8292;
+      }
+   }
+   &__input-chb {
+      flex: 1 1 100%;
+   }
+   &__chb-lb {
+      position: relative;
+      top: -1px;
+      left: -1px;
+      display: flex;
+      align-items: center;
+
+      cursor: pointer;
+   }
+   &__chb {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      &--hide {
+         &:after {
+            transform: scale(0);
+         }
+      }
+      &.__error {
+         &:before {
+            background-color: #9e4848 !important;
+         }
+      }
+      &:before {
+         display: inline-block;
+         position: absolute;
+         content: '';
+         width: 18px;
+         height: 18px;
+
+         border-radius: 3px;
+         background-color: #6EBBD3;
+         &:hover {
+            background-color: #4D8292;
+         }
+         .feedback__input-chb:hover &{
+            cursor: pointer;
+         }
+      }
+      &:after {
+         display: inline-block;
+         position: absolute;
+         content: '';
+         width: 10px;
+         height: 10px;
+         background: url(../img/icons/check.svg) center / cover no-repeat;
+
+         transition: 0.2s;
+         .feedback__input-chb:hover &{
+            cursor: pointer;
+         }
+      }
+   }
+   &__chb-text {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 1.1rem;
+
+      line-height: 1;
+      .feedback__input-chb:hover &{
+         cursor: pointer;
+         color: #bbbbbb;
+      }
+      .feedback__chb.__error + & {
+         color:  #ffd6d6;
+      }
+   }
+}
+
+
+
+
+
+.__req {
+}
+.__email {
+}

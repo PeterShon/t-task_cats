@@ -2,3 +2,33 @@
    max-width: 1180px;
    height: 100%;
 }
+
+@media (min-width: 1440px) {
+   .front {
+      max-width: 1280px;
+   }
+}
+
+@media (max-width: 1300px) {
+   .front {
+      padding: 0 50px;
+   }
+}
+
+@media (max-width: 900px) {
+   .front {
+      padding: 0 25px;
+   }
+}
+
+@media (max-width: 830px) {
+   .front {
+      padding: 0 10px;
+   }
+}
+
+@media (max-width: 830px) {
+   .front {
+      padding: 0 10px;
+   }
+}

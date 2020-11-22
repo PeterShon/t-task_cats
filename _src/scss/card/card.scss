@@ -1,7 +1,6 @@
 .card {
    position: relative;
 
-   width: 23.75rem;
    cursor: pointer;
    &__muzzle-wrapper {
       width: 100%;
@@ -11,8 +10,9 @@
    &__muzzle {
       height: 100%;
       width: 100%;
-      object-position: center center;
-      object-fit: cover;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       opacity: 0.9;
       transition: 1.5s ease-in;
       .card:hover & {
@@ -44,15 +44,17 @@
       margin-bottom: .9rem;
 
       &:nth-child(2) { 
-         flex: 1 1 40.4%; 
+         //flex: 1 1 40.4%;
+         box-sizing: border-box;
+         min-width: 40.4%;  //instead of flex: 1 1 X for IE11
          border-left: 4px solid #6EBBD3;
          padding-left: 1.13rem;
       }
       &:nth-child(3) {
-         flex: 1 1 31%; 
+         min-width: 31%; //instead of flex: 1 1 X for IE11
       }
       &:nth-child(4) {
-         flex: 1 1 28.6%; 
+         min-width: 28.6%; //instead of flex: 1 1 X for IE11
       }
    }
    &__info-item-d {
@@ -97,15 +99,17 @@
             display: block;
             top: calc(50% - 1rem);
             left: calc(50% - 1rem);
+            width: 50px;
+            height: 50px;
 
             width: 2rem;
             height: 2rem;
 
-            background: url(../img/icons/heart.svg) center / contain no-repeat;
+            background-color: red;
+            background: url(/img/icons/heart.svg) center / contain no-repeat;
             opacity: 0;
-            scale: 0;
 
-            transform: rotate(270deg);
+            transform: rotate(270deg) scale(0);
             transition: 0.4s ease-in-out;
          }
       }
@@ -124,7 +128,8 @@
             top: 0;
             width: 100%;
             height: 100%;
-
+            
+            background-color: #414141; //for ie11
             background: repeating-linear-gradient(135deg, #00000000 0px,#00000000 5px, #505050 6px,  #505050 7px);
             opacity: 0;
 
@@ -186,6 +191,14 @@
          .card__widg-like-wrap:hover &{
             transform: scale(1);
          }
+      }
+   }
+}
+
+@media (max-width: 650px) {
+   .card {
+      &__info {
+         padding: 1rem 0.5rem 0.5rem;
       }
    }
 }

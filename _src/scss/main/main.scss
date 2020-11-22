@@ -14,7 +14,7 @@
    &__arrowtop {
       position: fixed;
       bottom: 3rem;
-      right: 18.95%;
+      right: 7.6rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -37,6 +37,15 @@
       transition: 0.2s;
       .main__arrowtop:hover & {
          transform: translate(10px,-10px) rotate(45deg);
+      }
+   }
+}
+
+@media (max-width: 1200px) {
+   .main {
+      &__arrowtop {
+         bottom: 20px;
+         right: 20px;
       }
    }
 }

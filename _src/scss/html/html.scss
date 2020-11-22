@@ -1,3 +1,16 @@
 html {
    font-size: 16px;
 }
+
+/*MEDIA QUERIES*/
+/* Large desktops and laptops */
+@media (min-width: 1440px) {
+   html {
+      font-size: 17px;
+   }
+}
+@media (max-width: 830px) {
+   html {
+      font-size: 14px;
+   }
+}

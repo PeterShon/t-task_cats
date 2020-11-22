@@ -35,6 +35,7 @@
       flex: 1 1 42%;
    }
    &__btn {
+      width: 100%;
       padding: 1.375rem 4.69rem 1.5rem 4.69rem;
 
       cursor: pointer;
@@ -65,44 +66,20 @@
       justify-content: center;
       align-items: center;
       &--hide {
-         &:after {
-            transform: scale(0);
+         & + .feedback__chb-text {
+            &:after {
+               transform: scale(0);
+            }
          }
       }
       &.__error {
-         &:before {
-            background-color: #9e4848 !important;
+         & + .feedback__chb-text {
+            &:before {
+               background-color: #9e4848 !important;
+            }  
          }
       }
-      &:before {
-         display: inline-block;
-         position: absolute;
-         content: '';
-         width: 18px;
-         height: 18px;
 
-         border-radius: 3px;
-         background-color: #6EBBD3;
-         &:hover {
-            background-color: #4D8292;
-         }
-         .feedback__input-chb:hover &{
-            cursor: pointer;
-         }
-      }
-      &:after {
-         display: inline-block;
-         position: absolute;
-         content: '';
-         width: 10px;
-         height: 10px;
-         background: url(../img/icons/check.svg) center / cover no-repeat;
-
-         transition: 0.2s;
-         .feedback__input-chb:hover &{
-            cursor: pointer;
-         }
-      }
    }
    &__chb-text {
       display: inline-flex;
@@ -117,10 +94,48 @@
       .feedback__chb.__error + & {
          color:  #ffd6d6;
       }
+      &:before {
+         display: inline-block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         content: '';
+
+         width: 18px;
+         height: 18px;
+         border-radius: 3px;
+         background-color: #6EBBD3;
+         .feedback__input-chb:hover &{
+            cursor: pointer;
+            background-color: #4D8292;
+         }
+      }
+      &:after {
+         display: inline-block;
+         position: absolute;
+         top: 4px;
+         left: 4px;
+         content: '';
+
+         width: 10px;
+         height: 10px;
+         background: url(../img/icons/check.svg) center / cover no-repeat;
+
+         transition: 0.2s;
+         .feedback__input-chb:hover &{
+            cursor: pointer;
+         }
+      }
    }
 }
 
-
+@media (max-width: 1300px) {
+   .feedback {
+      &__btn-wrapper, &__input-email {
+         flex: 1 1 auto;
+      }
+   }
+}
 
 
 

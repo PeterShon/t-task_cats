@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementsByClassName('feedback')[0].classList.remove('__sending');
          }
       } else {
-         alert('Заполните обязательные поля!')
+         alert('Заполните обязательные поля!');
       }
-   }
+   };
 
    function formValidate(form) {
       let error = 0;
@@ -56,17 +56,17 @@ document.addEventListener('DOMContentLoaded', function () {
          }
       }
       return error;
-   }
+   };
 
    //функции добавляют/убирают класс '__error' себе и родительскому объету
    function formAddError(input) {
       input.parentElement.classList.add('__error');
       input.classList.add('__error');
-   }
+   };
    function formRemoveError(input) {
       input.parentElement.classList.remove('__error');
       input.classList.remove('__error');
-   }
+   };
    //Функция теста email
    function emailTest(input) {
       return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);

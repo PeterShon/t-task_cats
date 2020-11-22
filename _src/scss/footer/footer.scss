@@ -27,3 +27,19 @@
       flex: 1 1 57.25%;
    }
 }
+
+@media (max-width: 1300px) {
+   .footer {
+      &__inner {
+         display: block;
+      }
+   }
+}
+
+@media (max-width: 600px) {
+   .footer {
+      &__inner {
+         padding: 2rem 1rem 1rem 1rem;
+      }
+   }
+}

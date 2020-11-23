@@ -86,6 +86,7 @@
       align-items: center;
       margin-left: 1.1rem;
 
+      user-select: none;
       line-height: 1;
       .feedback__input-chb:hover &{
          cursor: pointer;
@@ -121,7 +122,12 @@
          height: 10px;
          background: url(../img/icons/check.svg) center / cover no-repeat;
 
+         opacity: 0;
+
          transition: 0.2s;
+         .feedback__chb--active + & {
+            opacity: 1;
+         }
          .feedback__input-chb:hover &{
             cursor: pointer;
          }

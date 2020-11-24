@@ -16,4 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
    @@include('./salewidget/salewidget.js')
    ////bought
    @@include('./bought/bought.js')
+   ////sort
+   @@include('./sort/sort.js')
 });

@@ -6,11 +6,11 @@
                <span class="section__sorting-text text text--fz-18 text--wt-bold text--col-black">Сортировать
                   по:</span>
                <ul class="section__sort sort">
-                  <li class="sort__item sort__item">
+                  <li class="sort__item sort__price">
                      <span class="sort__name text text--fz-18 text--wt-normal text--col-black">Цене</span>
                      <img src="./img/icons/arrow_down.svg" alt="" class="sort__icon">
                   </li>
-                  <li class="sort__item">
+                  <li class="sort__item sort__age">
                      <span class="sort__name text text--fz-18 text--wt-normal text--col-black">Возрасту</span>
                      <img src="./img/icons/arrow_down.svg" alt="" class="sort__icon">
                   </li>
@@ -19,7 +19,7 @@
             <div class="section__cards cards">
                <div class="cards__wrapper">
                   <!--card-box-->
-                  <div class="cards__card-box cards__card-box--first">
+                  <div class="cards__card-box cards__card-box--first" id="cards__card-box">
                      <!--card-->
                      <div class="cards__card card card--hide">
                         <div class="card__muzzle-wrapper">
@@ -35,7 +35,7 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
                                  data-item-d="2">
                                  мес.</span>
                               <span
@@ -79,7 +79,799 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
                               <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="40 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Продан"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="1">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="20 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="3">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="25 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="8">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="-40">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="2">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="10 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Продан"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="2">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="-40">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="3">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="40 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Продан"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="7">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="20 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="25 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="1">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="-40">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="1">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="10 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Продан"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="3">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="-40">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="5">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="40 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Продан"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="3">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="20 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="8">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="25 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="-40">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="1">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="10 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Продан"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="3">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Купить"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="-40">%
+                           </div>
+                           <div class="card__widg-like-wrap">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
                                  data-item-d="2">
                                  мес.</span>
                               <span
@@ -123,8 +915,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="6">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -167,8 +959,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="9">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -211,8 +1003,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="12">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -255,8 +1047,96 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="5">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
                               <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="10 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Продан"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="6">
+                                 мес.</span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4"></span>
+                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
+                                 лап</span>
+                           </div>
+                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="10 000">
+                              руб.</div>
+                        </div>
+                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
+                           data-btn="Продан"></button>
+                        <div class="card__widgets">
+                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
+                              data-percent="">%
+                           </div>
+                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
+                              <a href="#" class="card__favorite">
+                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
+                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!--card-->
+                     <div class="cards__card card card--hide">
+                        <div class="card__muzzle-wrapper">
+                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
+                        </div>
+                        <div class="card__info">
+                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
+                              data-name="Кот полосатый"></span>
+                           <div class="card__info-item card__info-item--first">
+                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
+                                 data-item-d="Коричневый"></span>
+                              <span
+                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
+                           </div>
+                           <div class="card__info-item">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="7">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -299,8 +1179,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="8">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -343,8 +1223,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="9">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -387,8 +1267,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="8">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -431,8 +1311,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="7">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -475,8 +1355,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="6">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -519,8 +1399,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="5">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -563,8 +1443,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -607,8 +1487,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="3">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -651,7 +1531,7 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
                                  data-item-d="2">
                                  мес.</span>
                               <span
@@ -695,8 +1575,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="1">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -739,8 +1619,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="12">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -783,8 +1663,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="14">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -827,8 +1707,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="6">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -871,8 +1751,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="8">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -915,8 +1795,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="10">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -959,8 +1839,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="9">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1003,8 +1883,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="7">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1047,8 +1927,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="5">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1091,8 +1971,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="3">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1135,8 +2015,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="1">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1179,7 +2059,7 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
                                  data-item-d="2">
                                  мес.</span>
                               <span
@@ -1223,8 +2103,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="3">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1267,8 +2147,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1311,8 +2191,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="6">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1355,8 +2235,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="6">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1399,8 +2279,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="8">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1443,8 +2323,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="11">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1487,8 +2367,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="11">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1531,8 +2411,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="12">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1575,8 +2455,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="14">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1619,8 +2499,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="18">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1663,8 +2543,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1707,8 +2587,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="3">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1751,8 +2631,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="1">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1795,7 +2675,7 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
                                  data-item-d="2">
                                  мес.</span>
                               <span
@@ -1839,8 +2719,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="3">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1883,8 +2763,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="4">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1927,8 +2807,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="5">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -1971,8 +2851,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="6">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
@@ -2015,888 +2895,8 @@
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
                            </div>
                            <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="10 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Продан"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="-40">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="40 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Продан"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="20 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="25 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="-40">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="10 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Продан"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="-40">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="40 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Продан"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="20 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="25 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="-40">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="10 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Продан"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="-40">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="40 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Продан"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="20 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat1.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="25 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat3.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="30 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Купить"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="-40">%
-                           </div>
-                           <div class="card__widg-like-wrap">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="10 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Продан"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
-                                 мес.</span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="4"></span>
-                              <span class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Кол-во
-                                 лап</span>
-                           </div>
-                           <div class="card__price text text--fz-24 text--wt-bold text--col-black" data-price="10 000">
-                              руб.</div>
-                        </div>
-                        <button class="card__btn text text--fz-16 text--wt-bold text--col-white"
-                           data-btn="Продан"></button>
-                        <div class="card__widgets">
-                           <div class="card__widg-sale text text--fz-16 text--wt-normal text--col-white"
-                              data-percent="">%
-                           </div>
-                           <div class="card__widg-like-wrap card__widg-like-wrap--active">
-                              <a href="#" class="card__favorite">
-                                 <img src="./img/icons/heart.svg" alt="" class="card__widg-like">
-                                 <img src="./img/icons/heart-blue.svg" alt="" class="card__widg-like--blue">
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <!--card-->
-                     <div class="cards__card card card--hide">
-                        <div class="card__muzzle-wrapper">
-                           <div class="card__muzzle" style="background-image: url(./img/cards/cat2.jpg);"></div>
-                        </div>
-                        <div class="card__info">
-                           <span class="card__header text text--fz-24 text--wt-bold text--col-black"
-                              data-name="Кот полосатый"></span>
-                           <div class="card__info-item card__info-item--first">
-                              <span class="card__info-item-d text text--fz-12 text--wt-normal text--col-black"
-                                 data-item-d="Коричневый"></span>
-                              <span
-                                 class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">окрас</span>
-                           </div>
-                           <div class="card__info-item">
-                              <span class="card__info-item-d text text--fz-16 text--wt-bold text--col-black"
-                                 data-item-d="2">
+                              <span class="card__info-item-d card__age text text--fz-16 text--wt-bold text--col-black"
+                                 data-item-d="7">
                                  мес.</span>
                               <span
                                  class="card__info-item-h text text--fz-12 text--wt-normal text--col-black">Возраст</span>

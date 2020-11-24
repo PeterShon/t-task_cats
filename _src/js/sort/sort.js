@@ -7,6 +7,7 @@ const sortButtonAge = document.querySelector('.sort__age');
 setPrice(visiblecards);
 setAge(visiblecards);
 
+//определение вызова функций сортировки для кнопки по событию 'click', а так же стилизация этой кнопки
 sortButtonPrice.addEventListener('click', function () {
    sortByPrice(cardBox, cards, visiblecards);
    this.classList.add('sort__item--active');
@@ -18,18 +19,19 @@ sortButtonAge.addEventListener('click', function () {
    sortButtonPrice.classList.remove('sort__item--active');
 });
 
+//функция определения свойства цены карточке
 function setPrice(cards) {
    for (let i = 0; i < cards.length; i++) {
       cards[i].cPrice = cards[i].querySelector('.card__price').dataset.price.replace(' ', '') * 1;
    }
 }
-
+//функция определения свойства возвраста карточке
 function setAge(cards) {
    for (let i = 0; i < cards.length; i++) {
       cards[i].cAge = cards[i].querySelector('.card__age').dataset.itemD * 1;
    }
 }
-
+//функция сортировки по цене
 function sortByPrice(cardsNod, cardsArr, visCards) {
    setPrice(visCards);
    [].slice.call(cardsArr).sort(function (a, b) {
@@ -44,7 +46,7 @@ function sortByPrice(cardsNod, cardsArr, visCards) {
       cardsNod.appendChild(val);
    });
 }
-
+//функция сортировки по возрасту
 function sortByAge(cardsNod, cardsArr, visCards) {
    setAge(visCards);
    [].slice.call(cardsArr).sort(function (a, b) {

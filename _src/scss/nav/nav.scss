@@ -32,8 +32,6 @@
 @media (max-width: 800px) {
    .nav {
       background-color: rgba(110, 187, 211, 0.302);
-
-      //transition: 0.3s;
       &:hover {
          background-color: rgba(110, 187, 211, 1);
       }
@@ -76,8 +74,6 @@
 
                width: 60px;
                height: 60px;
-
-               //transition: 0s;
                &:hover {
                   transform: scale(1.2);
                }

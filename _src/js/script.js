@@ -8,4 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
    @@include('./moveUp/moveUp.js')
    ////burger
    @@include('./burger/burger.js')
+   ////modal
+   @@include('./modal/modal.js')
+   ////showcards
+   @@include('./showcards/showcards.js')
 });

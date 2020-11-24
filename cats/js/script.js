@@ -143,4 +143,34 @@ function burgerStateShow() {
       }
    }
 }
+   ////modal
+   let favorites = document.querySelectorAll('.card__widg-like-wrap');
+
+funcOfFavorite(favorites);
+
+function funcOfFavorite(array_favorite) {
+   for (let i = 0; i < array_favorite.length; i++) {
+      array_favorite[i].addEventListener('click', checkFavorite);
+   }
+}
+
+function checkFavorite() {
+   //console.log(this.querySelector(''));
+   if (this.classList.contains('card__widg-like-wrap--active')) {
+      this.classList.remove('card__widg-like-wrap--active');
+      this.querySelector('.card__favorite').href = "#close";
+   } else {
+      this.classList.add('card__widg-like-wrap--active');
+      this.querySelector('.card__favorite').href = "#openModal";
+   }
+}
+   ////showcards
+   let showButton = document.querySelector('.cards__show-block');
+let cardBoxs = document.querySelectorAll('.cards__card-box');
+
+showButton.addEventListener('click', function () {
+   this.classList.add('_hide');
+   cardBoxs[1].classList.remove('cards__card-box--hide');
+   cardBoxs[1].classList.add('cards__card-box--visible');
+})
 });

@@ -2,24 +2,40 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin: 0 -10px 0; 
+   &__wrapper {
+      width: 100%; //from ie11
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 -10px 0; 
+      margin-bottom: 4rem;
+   }
    &__card-box {
       width: 100%; //from ie11
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin: 0 -10px 0; 
+      margin: 0 -10px 0;
+
       &--first {
          margin-top: -1.64rem;
-      }     
+      }
+      &--hide {
+         display: none;
+      }
    }
    &__card {
       margin: 1.64rem 10px 0;
       flex: 1 0 23.75rem;
    }
+   &__pseudo-card {
+      height: 0;
+      flex: 1 0 23.75rem;
+      margin: 0 10px;
+   }
    &__show-block {
       padding: 1.32rem 8.06rem;
-      margin: 4rem -0.2rem 5.21rem 0;
+      margin: 0 -0.2rem 5.21rem 0;
 
       border: 1px solid #cacaca;
       background-color: transparent;
@@ -36,6 +52,10 @@
       &:after {
          content: attr(data-n);
       }
+      &._transparent {
+         user-select: none;
+         cursor: auto;
+      }
    }
 }
 
@@ -50,6 +70,9 @@
 
 @media (max-width: 700px) {
    .cards {
+      &__wrapper {
+         margin-bottom: 2rem;
+      }
       &__card {
          flex: 1 1 46%;
       }
@@ -58,7 +81,7 @@
          align-self: stretch;
          flex: 0 1 100%;
          -ms-flex: none; //for ie11
-         margin: 2rem 10px 3rem;
+         margin: 0 10px 3rem;
          padding: 1.32rem 1rem;
       }
    }

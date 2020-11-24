@@ -2,12 +2,9 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   margin: 0 -10px;
    &__wrapper {
       width: 100%; //from ie11
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 -10px 0; 
       margin-bottom: 4rem;
    }
    &__card-box {
@@ -15,13 +12,8 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin: 0 -10px 0;
-
       &--first {
          margin-top: -1.64rem;
-      }
-      &--hide {
-         display: none;
       }
    }
    &__card {

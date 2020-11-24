@@ -364,6 +364,7 @@ html {
 
 .main__arrowtop {
   position: fixed;
+  z-index: 1;
   bottom: 3rem;
   right: 7.6rem;
   display: -webkit-box;
@@ -861,21 +862,11 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 -10px;
 }
 
 .cards__wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 -10px 0;
   margin-bottom: 4rem;
 }
 
@@ -889,15 +880,10 @@ html {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -10px 0;
 }
 
 .cards__card-box--first {
   margin-top: -1.64rem;
-}
-
-.cards__card-box--hide {
-  display: none;
 }
 
 .cards__card {
@@ -948,6 +934,10 @@ html {
 .card {
   position: relative;
   cursor: pointer;
+}
+
+.card--hide {
+  display: none;
 }
 
 .card__muzzle-wrapper {

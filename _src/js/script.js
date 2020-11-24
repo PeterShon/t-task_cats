@@ -12,4 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
    @@include('./modal/modal.js')
    ////showcards
    @@include('./showcards/showcards.js')
+   ////salewidget
+   @@include('./salewidget/salewidget.js')
+   ////bought
+   @@include('./bought/bought.js')
 });

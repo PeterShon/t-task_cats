@@ -13,6 +13,7 @@
    }
    &__arrowtop {
       position: fixed;
+      z-index: 1;
       bottom: 3rem;
       right: 7.6rem;
       display: flex;

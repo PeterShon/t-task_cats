@@ -145,17 +145,18 @@ function burgerStateShow() {
 }
    ////modal
    let favorites = document.querySelectorAll('.card__widg-like-wrap');
-
+//вызов функции присвоения функции к каждому элементу по событию 'click'
 funcOfFavorite(favorites);
 
+//функция вызова функции проверки лайка по событию 'click'
 function funcOfFavorite(array_favorite) {
    for (let i = 0; i < array_favorite.length; i++) {
       array_favorite[i].addEventListener('click', checkFavorite);
    }
 }
 
+//Функция проверки лайка на элементе
 function checkFavorite() {
-   //console.log(this.querySelector(''));
    if (this.classList.contains('card__widg-like-wrap--active')) {
       this.classList.remove('card__widg-like-wrap--active');
       this.querySelector('.card__favorite').href = "#close";
@@ -165,12 +166,62 @@ function checkFavorite() {
    }
 }
    ////showcards
-   let showButton = document.querySelector('.cards__show-block');
-let cardBoxs = document.querySelectorAll('.cards__card-box');
+   let showButton = document.querySelector('.cards__show-block'); //кнопка
+let cardbox = document.querySelector('.cards__card-box'); //бокс с карточками
+let hidecards = cardbox.getElementsByClassName('card--hide'); //список курточек, узлов DOM
+const firstshow = 6; //сколько карточек показать вначале
+const countToShow = showButton.dataset.n; //карточек к показу
 
+//показать начальное количество карточек
+if (hidecards.length < 6) {
+   for (let i = 0; i < hidecards.length; i++) {
+      hidecards[0].classList.remove('card--hide');
+   }
+} else {
+   for (let i = 0; i < firstshow; i++) {
+      hidecards[0].classList.remove('card--hide');
+   }
+}
+
+//передача событию 'click' для кнопки анонимную функцию вызывающую фунцию показа карточек
 showButton.addEventListener('click', function () {
-   this.classList.add('_hide');
-   cardBoxs[1].classList.remove('cards__card-box--hide');
-   cardBoxs[1].classList.add('cards__card-box--visible');
+   showcards(hidecards);
 })
+
+//функция показа карточек
+function showcards(arrayOfCards) {
+   if (arrayOfCards.length < countToShow) {
+      for (let i = 0; i < arrayOfCards.length; i++) {
+         arrayOfCards[0].classList.remove('card--hide');
+      }
+      if (arrayOfCards.length == 0) {
+         showButton.classList.add('_hide');
+      }
+   } else {
+      for (let i = 0; i < countToShow; i++) {
+         arrayOfCards[0].classList.remove('card--hide');
+      }
+      if (arrayOfCards.length == 0) {
+         showButton.classList.add('_hide');
+      }
+   }
+}
+   ////salewidget
+   let salewidgetsArray = cardbox.getElementsByClassName('card__widg-sale'); //список скидочных виджетов, узлов DOM
+//скрыть виджет, если дата-атрибут пуст
+for (let i = 0; i < salewidgetsArray.length; i++) {
+   if (salewidgetsArray[i].dataset.percent == "") {
+      salewidgetsArray[i].classList.add('_transparent');
+   }
+}
+   ////bought
+   let boughtCats = cardbox.getElementsByClassName('card__btn'); //список кнопок карточек, узлов DOM
+//определение стиля кнопки
+for (let i = 0; i < boughtCats.length; i++) {
+   if (boughtCats[i].dataset.btn == "Продан") {
+      boughtCats[i].classList.add('card__btn--bought');
+   } else {
+      boughtCats[i].classList.add('card__btn--buy');
+   }
+}
 });
